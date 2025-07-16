@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashok Kumar | Projects</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">AK</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html" class="active">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <!-- <li><a href="certifications.html">Certifications</a></li> -->
+            </ul>
+        </nav>
+        <div class="mobile-menu-btn">☰</div>
+    </header>
+
+    <main class="projects-main">
+        <h1 class="page-title">My Projects</h1>
+        
+        <div class="project-filters">
+            <button class="filter-btn active" data-filter="all">All</button>
+            <button class="filter-btn" data-filter="web">Web</button>
+            <button class="filter-btn" data-filter="iot">IoT</button>
+            <button class="filter-btn" data-filter="fullstack">Full Stack</button>
+        </div>
+        
+        <div class="projects-grid">
+            <!-- Project 1 -->
+            <div class="project-card" data-category="web">
+                <div class="project-image">
+                    <img src="images/couse.jpg" alt="Patient Portal">
+                </div>
+                <div class="project-info">
+                    <h3>Course Management System</h3>
+                    <div class="project-tech">
+                        <span>React</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+                        <span>JavaScript</span>
+                    </div>
+                    <p>Web application providing unique ID and dashboard for users and course, admin CRUD operations.</p>
+                    <a href="https://github.com/Ashokkumar1574/Course-Management-System.git" class="view-details">View Details</a>
+                </div>
+            
+            </div>
+            
+            <!-- Project 2 -->
+            <div class="project-card" data-category="fullstack">
+                <div class="project-image">
+                    <img src="images/bike-project.webp" alt="Bike Service">
+                </div>
+                <div class="project-info">
+                    <h3>Bike Service Station Booking</h3>
+                    <div class="project-tech">
+                        <span>MERN Stack</span>
+                        <span>React</span>
+                        <span>Node.js</span>
+                        <span>MongoDB</span>
+                    </div>
+                    <p>Full-stack platform for bike service booking with status tracking (pending, ready, completed).</p>
+                    <!-- <button class="view-details">View Details</button> -->
+                      <a href="https://github.com/Ashokkumar1574/Bike_Services.git" class="view-details">View Details</a>
+                </div>
+                <div class="project-details">
+                    <h3>Bike Service Station Booking Platform</h3>
+                    <p>Built a full-stack Bike Service Station Booking Platform using MERN stack. Key features:</p>
+                    <ul>
+                        <li>User registration and authentication</li>
+                        <li>Service booking system</li>
+                        <li>Status tracking (pending, ready for delivery, completed)</li>
+                        <li>Secure API endpoints</li>
+                        <li>Mongoose schemas for data modeling</li>
+                        <li>React Bootstrap for UI components</li>
+                    </ul>
+                    <button class="close-details">Close</button>
+                </div>
+            </div>
+            
+            <!-- Project 3 -->
+            <div class="project-card" data-category="iot">
+                <div class="project-image">
+                    <img src="images/smartcampus.jpg" alt="Campus Tracker">
+                </div>
+                <div class="project-info">
+                    <h3>Smart Campus Tracker</h3>
+                    <div class="project-tech">
+                        <span>IoT</span>
+                        <span>RFID</span>
+                        <span>React</span>
+                    </div>
+                    <p>RFID-based attendance tracker for institutions with automated marking system.</p>
+                    <a href="http://127.0.0.1:5501/index.html#home" class="view-details">View Details</a>
+                </div>
+                <div class="project-details">
+                    <h3>Smart Campus Tracker Using RFID</h3>
+                    <p>This RFID-based attendance tracker helps institutions automate attendance marking. Features:</p>
+                    <ul>
+                        <li>RFID tag scanning for attendance</li>
+                        <li>Automated record keeping</li>
+                        <li>React.js frontend with interactive UI</li>
+                        <li>Hardware-software integration</li>
+                        <li>Real-time data handling</li>
+                    </ul>
+                    <button class="close-details">Close</button>
+                </div>
+            </div>
+            
+            <!-- Project 4 -->
+            <div class="project-card" data-category="iot">
+                <div class="project-image">
+                    <img src="images/smartmeter.jpg" alt="Smart Meter">
+                </div>
+                <div class="project-info">
+                    <h3>Smart Metering System</h3>
+                    <div class="project-tech">
+                        <span>IoT</span>
+                        <span>ESP32</span>
+                        <span>Firebase</span>
+                    </div>
+                    <p>Real-time energy monitoring system with alerts, billing estimates, and cloud integration.</p>
+                    <button class="view-details">View Details</button>
+                </div>
+                <div class="project-details">
+                    <h3>Smart Metering System</h3>
+                    <p>Developed a Smart Metering System using IoT with ESP32, sensors, and Firebase. Features:</p>
+                    <ul>
+                        <li>Real-time energy usage monitoring</li>
+                        <li>Mobile app interface</li>
+                        <li>Visual dashboards</li>
+                        <li>Usage alerts</li>
+                        <li>Billing estimates</li>
+                        <li>Secure Firebase cloud integration</li>
+                    </ul>
+                    <button class="close-details">Close</button>
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="social-links">
+            <a href="https://github.com/Ashokkumar1574" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/ashokkuamrs" target="_blank">LinkedIn</a>
+            <a href="https://leetcode.com/u/Ashokkumar1574/" target="_blank">LeetCode</a>
+        </div>
+        <p>© 2024 Ashok Kumar. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/projects.js"></script>
+</body>
+</html>

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ashok Kumar | Contact</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/animations.css">
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="main-header">
+        <div class="logo">AK</div>
+        <nav class="main-nav">
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="projects.html">Projects</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html" class="active">Contact</a></li>
+                <!-- <li><a href="certifications.html">Certifications</a></li> -->
+            </ul>
+        </nav>
+        <div class="mobile-menu-btn">☰</div>
+    </header>
+
+    <main class="contact-main">
+        <h1 class="page-title">Get In Touch</h1>
+        
+        <div class="contact-container">
+            <div class="contact-info">
+                <h2>Contact Information</h2>
+                <div class="info-item">
+                    <i class="icon">📱</i>
+                    <p>9994690312</p>
+                </div>
+                <div class="info-item">
+                    <i class="icon">✉️</i>
+                    <p>ronalashok2004@gmail.com</p>
+                </div>
+                <div class="info-item">
+                    <i class="icon">📍</i>
+                    <p>Kovilpatti, Tamil Nadu, India</p>
+                </div>
+                
+                <div class="social-links">
+                    <h3>Connect With Me</h3>
+                    <div class="social-icons">
+                        <a href="https://github.com/Ashokkumar1574" target="_blank" class="social-icon github">GitHub</a>
+                        <a href="https://www.linkedin.com/in/ashokkuamrs" target="_blank" class="social-icon linkedin">LinkedIn</a>
+                        <a href="https://leetcode.com/u/Ashokkumar1574/" target="_blank" class="social-icon leetcode">LeetCode</a>
+                        <a href="https://ashokkumar1574.github.io/ashok-portfolio/" target="_blank" class="social-icon portfolio">Portfolio</a>
+                    </div>
+                </div>
+                
+                <div class="location-map">
+                    <h3>My Location</h3>
+                    <div class="map-container">
+                        <!-- Simple SVG map representation -->
+                        <svg viewBox="0 0 200 200" class="simple-map">
+                            <path d="M100 20 L180 50 L160 150 L40 150 L20 50 Z" fill="#f0f0f0" stroke="#3E92CC" stroke-width="2"/>
+                            <circle cx="120" cy="90" r="8" fill="#0A2463" class="location-pin"/>
+                            <text x="120" y="90" text-anchor="middle" fill="white" font-size="8" dy="3">KP</text>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h2>Send Me a Message</h2>
+                <form id="contactForm">
+                    <div class="form-group">
+                        <label for="name">Name</label>
+                        <input type="text" id="name" name="name" required>
+                        <div class="error-message" id="name-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email</label>
+                        <input type="email" id="email" name="email" required>
+                        <div class="error-message" id="email-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                        <div class="error-message" id="subject-error"></div>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <div class="error-message" id="message-error"></div>
+                    </div>
+                    <button type="submit" class="submit-btn">Send Message</button>
+                </form>
+                <div id="form-success" class="success-message">
+                    Message sent successfully! I'll get back to you soon.
+                </div>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="social-links">
+            <a href="https://github.com/Ashokkumar1574" target="_blank">GitHub</a>
+            <a href="https://www.linkedin.com/in/ashokkuamrs" target="_blank">LinkedIn</a>
+            <a href="https://leetcode.com/u/Ashokkumar1574/" target="_blank">LeetCode</a>
+        </div>
+        <p>© 2024 Ashok Kumar. All rights reserved.</p>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/form-validation.js"></script>
+</body>
+</html>

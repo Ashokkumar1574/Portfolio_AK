@@ -1,0 +1,64 @@
+/* Typing animation */
+@keyframes typing {
+    from { width: 0 }
+    to { width: 100% }
+}
+
+.typing-text {
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 2s steps(40, end);
+}
+
+/* Bubble animations */
+@keyframes float {
+    0% { transform: translateY(0px); }
+    50% { transform: translateY(-15px); }
+    100% { transform: translateY(0px); }
+}
+
+.bubble {
+    animation: float 4s ease-in-out infinite;
+}
+
+.bubble:nth-child(2) {
+    animation-delay: 0.5s;
+}
+
+.bubble:nth-child(3) {
+    animation-delay: 1s;
+}
+
+.bubble:nth-child(4) {
+    animation-delay: 1.5s;
+}
+
+.bubble:nth-child(5) {
+    animation-delay: 2s;
+}
+
+.bubble:nth-child(6) {
+    animation-delay: 2.5s;
+}
+
+/* CTA button animation */
+.cta-button {
+    position: relative;
+    overflow: hidden;
+}
+
+.cta-button::after {
+    content: '';
+    position: absolute;
+    top: -50%;
+    left: -60%;
+    width: 200%;
+    height: 200%;
+    background: rgba(255, 255, 255, 0.2);
+    transform: rotate(30deg);
+    transition: all 0.3s;
+}
+
+.cta-button:hover::after {
+    left: 100%;
+}
